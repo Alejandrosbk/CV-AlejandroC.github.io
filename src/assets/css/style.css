@@ -139,6 +139,7 @@ small {
     color: #333;
 }
 
+
 /* Buttons */
 
 a:not([href]):not([tabindex]) {
@@ -157,7 +158,7 @@ a:not([href]):not([tabindex]) {
     transition: all .3s;
     position: relative;
     color: #FFF;
-    background-color: #333;
+    background-color: #3f9d8b;
     z-index: 20;
     letter-spacing: 2px;
     overflow: hidden;
@@ -262,6 +263,7 @@ a:not([href]):not([tabindex]) {
     text-transform: lowercase;
 }
 
+
 /*-------------------------------------------------------------------
 
                         1. Preloader
@@ -363,6 +365,7 @@ a:not([href]):not([tabindex]) {
     animation-name: pulse;
 }
 
+
 /*-------------------------------------------------------------------
 
                         2. Home Styles
@@ -385,23 +388,22 @@ a:not([href]):not([tabindex]) {
 
 .home .bgScroll {
     animation: 40s linear 0s normal none infinite running bgScroll;
-    background: black url(../images/bg/scroll.jpeg) repeat scroll center top;
+    background: black url(../images/bg/space.jpg) repeat scroll center top;
 }
 
 .bgScroll {
+    background-repeat: no-repeat;
     height: 400%;
     position: absolute;
     width: 100%;
     z-index: -1;
 }
 
-
 @-webkit-keyframes bgScroll {
     0% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
-
     100% {
         -webkit-transform: translateY(-1934px);
         transform: translateY(-1934px);
@@ -413,7 +415,6 @@ a:not([href]):not([tabindex]) {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
-
     100% {
         -webkit-transform: translateY(-1934px);
         transform: translateY(-1934px);
@@ -481,6 +482,7 @@ a:not([href]):not([tabindex]) {
     position: fixed;
     width: 100%;
 }
+
 
 /* HERO SLIDER*/
 
@@ -563,6 +565,7 @@ a:not([href]):not([tabindex]) {
     display: none;
 }
 
+
 /*-------------------------------------------------------------------
 
                         3. Menu Styles
@@ -638,7 +641,7 @@ h2.menu-item:after {
     left: -20px;
     width: 70px;
     height: 1px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     transition: all 0.5s ease;
 }
 
@@ -654,6 +657,7 @@ h2.menu-item:after {
 .menu-block:hover {
     background: rgba(0, 0, 0, 0.1);
 }
+
 
 /* --- Inline Menu --- */
 
@@ -725,7 +729,7 @@ h2.menu-item:after {
 
 .inline-menu li.active,
 .inline-menu li:hover {
-    color: #333;
+    color: #3f9d8b;
 }
 
 .inline-menu li.active {
@@ -742,11 +746,9 @@ h2.menu-item:after {
     line-height: 70px;
 }
 
-
 .style2.dark {
-	background-color: #F1F3F6
+    background-color: #F1F3F6
 }
-
 
 .style2.dark .inline-menu li {
     color: #666;
@@ -761,10 +763,10 @@ h2.menu-item:after {
 }
 
 .sidebar-menu {
-    background: #111; 
+    background: #111;
     height: 100%;
     left: 0;
-    position: fixed; 
+    position: fixed;
     width: 20%;
 }
 
@@ -803,7 +805,7 @@ h2.menu-item:after {
     text-align: center;
     width: 69%;
     right: 13px;
-    top:-60px;
+    top: -60px;
     transition: all 0.7s;
     z-index: 1;
 }
@@ -817,8 +819,9 @@ h2.menu-item:after {
 }
 
 .content-blocks.pop.showx .close-pop {
-	top: 0;
+    top: 0;
 }
+
 
 /*-------------------------------------------------------------------
 
@@ -842,7 +845,7 @@ h2.menu-item:after {
 }
 
 .content-blocks.showx {
-	opacity: 1;
+    opacity: 1;
     top: 0;
 }
 
@@ -898,6 +901,7 @@ h2.menu-item:after {
     margin-bottom: 30px;
     font-weight: 600;
 }
+
 
 /*-------------------------------------------------------------------
 
@@ -1017,7 +1021,7 @@ h2.menu-item:after {
 
 .social li i {
     line-height: 32px;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .social a:hover {
@@ -1028,6 +1032,7 @@ h2.menu-item:after {
     border: 2px solid #333;
     color: #333;
 }
+
 
 /*-------------------------------------------------------------------
 
@@ -1114,7 +1119,7 @@ h2.menu-item:after {
 .progress-bar {
     height: 2px;
     line-height: 8px;
-    background-color: #666;
+    background-color: #3f9d8b;
     box-shadow: none;
     position: relative;
 }
@@ -1226,7 +1231,8 @@ h2.menu-item:after {
 }
 
 .exp .hgroup h4 span {
-    color: #666;
+    color: #3f9d8b;
+    font-weight: 600;
 }
 
 .exp .hgroup h5 {
@@ -1407,6 +1413,7 @@ h4.package {
     width: 100%;
 }
 
+
 /*-------------------------------------------------------------------
 
                         7. PORTFOLIO BLOCK
@@ -1439,6 +1446,7 @@ h4.package {
     -webkit-transform: rotate(34deg);
     transform: rotate(34deg);
 }
+
 
 /* Portfolio */
 
@@ -1684,6 +1692,7 @@ h4.package {
     color: #333;
 }
 
+
 /*-------------------------------------------------------------------
 
                         8. BLOG BLOCK
@@ -1795,7 +1804,8 @@ h4.package {
     border-color: #666;
 }
 
-.page-link:focus, .page-link:hover {
+.page-link:focus,
+.page-link:hover {
     color: #333;
 }
 
@@ -2037,6 +2047,7 @@ h4.package {
     text-align: right;
 }
 
+
 /*-------------------------------------------------------------------
 
                         9. CONTACT BLOCK
@@ -2149,6 +2160,7 @@ h4.package {
     height: 75px;
     width: 80px;
 }
+
 
 /*-------------------------------------------------------------------
 
@@ -2412,21 +2424,17 @@ h4.package {
 }
 
 @media (max-width:980px) {
-
     .inline-menu {
         margin-top: 5px;
     }
-
     .timeline:before,
     .timeline:after,
     .exp:after {
         display: none;
     }
-
     .exp-holder {
         margin-top: 0;
     }
-
     .exp {
         padding-left: 0;
     }
@@ -2613,7 +2621,7 @@ h4.package {
         width: 100%;
         left: 0;
     }
-     .menu4 .content-blocks.pop {
+    .menu4 .content-blocks.pop {
         left: 100%;
     }
     .menu4 .content-blocks.pop.showx,
@@ -2748,8 +2756,8 @@ h4.package {
 }
 
 @media (max-width:375px) {
-	.home {
-		position: relative;
+    .home {
+        position: relative;
     }
     .menu4 .home {
         height: 100vh;
@@ -2766,23 +2774,24 @@ h4.package {
 }
 
 @media (max-width:320px) {
-	.inline-menu {
-		margin-right: 0;
-	}
-	.inline-menu li {
-	    padding: 0 8px;
-	}
+    .inline-menu {
+        margin-right: 0;
+    }
+    .inline-menu li {
+        padding: 0 8px;
+    }
     .menu4 .inline-menu li {
         padding: 0 5px;
     }
-	.filters ul li {
-		margin-left: 5px;
-	}
+    .filters ul li {
+        margin-left: 5px;
+    }
     .project-nav span {
         display: block;
         width: 100%;
     }
 }
+
 
 /*-------------------------------------------------------------------
 
@@ -2791,22 +2800,24 @@ h4.package {
 -------------------------------------------------------------------*/
 
 .buy-now {
-    background-color: #82B441;  
-    color: #FFF; 
-    display: block; 
-    font-size: 13px; 
-    font-weight: 500; 
+    background-color: #82B441;
+    color: #FFF;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
     left: 50px;
     letter-spacing: 1.5px;
-    padding: 3px 15px; 
+    padding: 3px 15px;
     position: absolute;
-    top: 20px; 
+    top: 20px;
     z-index: 999
 }
+
 .buy-now:hover {
     color: #f5f5f5;
 }
-@media (max-width: 1024px){
+
+@media (max-width: 1024px) {
     .buy-now {
         display: none
     }

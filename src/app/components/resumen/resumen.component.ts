@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataFirebaseService } from 'src/app/services/data-firebase.service';
 
 @Component({
   selector: 'app-resumen',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumenComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService: DataFirebaseService) { }
 
   ngOnInit(): void {
   }

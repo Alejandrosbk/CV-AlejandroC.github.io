@@ -1,28 +1,27 @@
 <section class="content" id="about">
     <div class="block-content">
         <h3 class="block-title">Perfil</h3>
-        <h3 class="subheading">¡Hola! soy Anderson Bastidas <strong>Analista De Software & Programador BackEnd/FrontEnd</strong></h3>
-        <p>Web Senior con más de 8 años de experiencia. especializada en desarrollo front end y back end. Experimentado con todas las etapas de la ciclo de desarrollo para proyectos web dinámicos. Tener un conocimiento profundo incluyendo HTML5 avanzado,
-            CSS, CSS3, SASS, LESS, JSON, XML, Java, JavaScript, JQuery, Angular JS. Fuertes antecedentes en gestión y liderazgo.</p>
+        <h3 class="subheading">¡Hola! soy {{ dataService.info.nombre }} <strong>{{ dataService.info.cargo }}</strong></h3>
+        <p>{{ dataService.info.descripcion }}</p>
         <div class="info-list row">
-            <div class="col-sm-6"><span>Nombre : </span> Anderson Bastidas</div>
-            <div class="col-sm-6"><span>Fecha de Nacimiento : </span> Junio 10, 1987 </div>
-            <div class="col-sm-6"><span>Dirección : </span> Perú, Lima, Carabayllo.</div>
-            <div class="col-sm-6"><span>Email : </span> davisanderson87@gmail.com</div>
-            <div class="col-sm-6"><span>Telefono : </span> + 51 959 747 175</div>
-            <div class="col-sm-6"><span>Interes : </span> Frelance, Full-Time</div>
+            <div class="col-sm-6"><span>Nombre : </span> {{ dataService.info.nombre }} </div>
+            <div class="col-sm-6"><span>Fecha de Nacimiento : </span> {{ dataService.info.fecha }} </div>
+            <div class="col-sm-6"><span>Dirección : </span> {{ dataService.info.direccion }} </div>
+            <div class="col-sm-6"><span>Email : </span> {{ dataService.info.email }} </div>
+            <div class="col-sm-6"><span>Telefono : </span> {{ dataService.info.telefono }} </div>
+            <div class="col-sm-6"><span>Interes : </span> {{ dataService.info.intereses }} </div>
         </div>
     </div>
     <div class="block-content">
         <h3 class="block-title">Profesional</h3>
-        <!-- <div *ngFor="let profex of cv.profesional">
-            <label class="progress-bar-label">{{ profex.nombre }}</label>
+        <div *ngFor="let prof of dataService.profesional">
+            <label class="progress-bar-label">{{ prof.nombre }}</label>
             <div class="progress">
-                <div [style.width.%]=profex.valor class="progress-bar" role="progressbar" attr.aria-valuenow="{{ profex.valor }}" aria-valuemin="0" aria-valuemax="100">
-                    <span>{{ profex.valor }}%</span>
+                <div [style.width.%]=prof.valor class="progress-bar" role="progressbar" attr.aria-valuenow="{{ prof.valor }}" aria-valuemin="0" aria-valuemax="100">
+                    <span>{{ prof.valor }}%</span>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
     <div class="block-content">
         <h3 class="block-title">Experiencia</h3>
@@ -30,15 +29,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="exp-holder">
-                        <!-- <div *ngFor="let expex of cv.experiencia">
+                        <div *ngFor="let expe of dataService.experiencia">
                             <div class="exp">
                                 <div class="hgroup">
-                                    <h4><span>{{ expex.Empresa }}</span> - {{ expex.Cargo }}</h4>
-                                    <h5> {{ expex.Fecha }} </h5>
+                                    <h4><span>{{ expe.empresa }}</span> - {{ expe.cargo }}</h4>
+                                    <h5> {{ expe.fecha }} </h5>
                                 </div>
-                                <p>{{ expex.Descripcion }}</p>
+                                <p>{{ expe.descripcion }}</p>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,15 +49,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="exp-holder">
-                        <!-- <div *ngFor="let edux of cv.educacion">
+                        <div *ngFor="let edu of dataService.educacion">
                             <div class="exp">
                                 <div class="hgroup">
-                                    <h4>{{ edux.Nombre }} | <a href="{{ edux.Url }}" target="_blank"><span>Ver Certificado</span></a></h4>
-                                    <h5>{{ edux.Fecha }}</h5>
+                                    <h4>{{ edu.nombre }} | <a href="{{ edu.url }}" target="_blank"><span>Ver Certificado</span></a></h4>
+                                    <h5>{{ edu.fecha }}</h5>
                                 </div>
-                                <p>{{ edux.Descripcion }}</p>
+                                <p>{{ edu.descripcion }}</p>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,47 +66,12 @@
     <div class="block-content">
         <h3 class="block-title">Servicios</h3>
         <div class="row">
-            <div class="col-md-4 col-sm-6 service">
+            <div *ngFor="let serv of dataService.servicios" class="col-md-4 col-sm-6 service">
                 <div class="service-icon">
-                    <i class="ion-laptop"></i>
+                    <i class="{{ serv.icono }}"></i>
                 </div>
-                <h4>Diseño Web</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 service">
-                <div class="service-icon">
-                    <i class="ion-pie-graph"></i>
-                </div>
-                <h4>Desarrollo de Aplicaciones</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 service">
-                <div class="service-icon">
-                    <i class="ion-paintbucket"></i>
-                </div>
-                <h4>Diseño Grafico</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 service">
-                <div class="service-icon">
-                    <i class="ion-printer"></i>
-                </div>
-                <h4>Print Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 service">
-                <div class="service-icon">
-                    <i class="ion-qr-scanner"></i>
-                </div>
-                <h4>Graphic Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 service">
-                <div class="service-icon">
-                    <i class="ion-social-buffer"></i>
-                </div>
-                <h4>Print Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                <h4>{{ serv.nombre }}</h4>
+                <p>{{ serv.descripcion }}</p>
             </div>
         </div>
     </div>
@@ -128,24 +92,24 @@
             </div>
         </div>
     </div> -->
-    <div class="block-content">
+    <!-- <div class="block-content">
         <h3 class="block-title">Testimonios</h3>
         <div class="row">
             <div id="liontestimonial" class="owl-carousel owl-theme">
-                <!-- <div *ngFor="let testix of cv.testimonio">
+                <div *ngFor="let test of dataService.testimonio">
                     <div class="item testimonials">
                         <img src="assets\images\testimonials\1.jpeg" alt="">
-                        <blockquote>{{ testix.Descripcion }}
-                            <p class="quote"><span>{{ testix.Nombre }}</span> - {{ testix.Cargo }}</p>
+                        <blockquote>{{ test.descripcion }}
+                            <p class="quote"><span>{{ test.nombre }}</span> - {{ test.cargo }}</p>
                         </blockquote>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="row text-center">
         <div class="col-md-12 btn-email">
-            <a class="btn lowercase">davisanderson87@gmail.com</a>
+            <a class="btn lowercase" href="mailTo:{{ dataService.info.email }}">{{ dataService.info.email }}</a>
         </div>
     </div>
 </section>
