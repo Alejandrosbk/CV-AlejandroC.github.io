@@ -24,7 +24,7 @@ export class DataFirebaseService {
 
   private personalInfo() {
     this.http.get('../../assets/data/personal-information.json')
-    .subscribe( (res: PersonalInformation) => {
+    .subscribe((res: any) => {
       this.info = res;
       // console.log(res);
     });
