@@ -21,7 +21,7 @@
             <div class="name-block-container">
                 <h1><span>Hola, Soy</span>{{ dataService.info.nombre }}</h1>
                 <h2>{{ dataService.info.cargo }}</h2>
-                <a target="_blank" href="" class="btn btn-download">Descargar CV</a>
+                <a (click)="showAlert()" class="btn btn-download">Descargar CV</a>
                 <ul class="social">
                     <li><a href="https://www.linkedin.com/in/david-alejandro-cantillo-g-61b3681a0/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
                     <li><a href="https://github.com/Alejandrosbk/Alejandrosbk/" target="_blank"><i class="ion-social-github"></i></a></li>
