@@ -1,4 +1,4 @@
-export interface PersonalInformation {
+export interface PersonalInfo {
     cargo?: string;
     descripcion?: string;
     direccion?: string;

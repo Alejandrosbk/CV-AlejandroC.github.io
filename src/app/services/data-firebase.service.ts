@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { PersonalInformation } from '../interfaces/personal-information';
+import { PersonalInfo } from '../interfaces/personal-information';
 @Injectable({
   providedIn: 'root'
 })
 export class DataFirebaseService {
 
-  info: PersonalInformation = {};
+  info: PersonalInfo = {};
+  personaldata: any[] = [];
   profesional: any[] = [];
   educacion: any[] = [];
   testimonio: any[] = [];
@@ -23,10 +24,10 @@ export class DataFirebaseService {
   }
 
   private personalInfo() {
-    this.http.get('../../assets/data/personal-information.json')
-    .subscribe((res: any) => {
-      this.info = res;
-      // console.log(res);
+    this.http.get('assets/data/personal-information.json')
+    .subscribe((resp: PersonalInfo) => {
+      this.info = resp;
+      // console.log(resp);
     });
   }
 
