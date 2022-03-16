@@ -18,10 +18,10 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  showAlert() {
-    this.toastr.info('Próximamente Disponible', '', {
-      positionClass: 'toast-top-center',
-      timeOut: 3000,
-    });
-  }
+  // showAlert() {
+  //   this.toastr.info('Próximamente Disponible', '', {
+  //     positionClass: 'toast-top-center',
+  //     timeOut: 3000,
+  //   });
+  // }
 }
