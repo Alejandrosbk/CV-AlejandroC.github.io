@@ -1,7 +1,6 @@
 <section class="content" id="about">
     <div class="block-content">
         <h3 class="block-title">Perfil</h3>
-        <h3 class="subheading">¡Hola! soy {{ dataService.info.name }} <strong>{{ dataService.info.position }}</strong></h3>
         <p>{{ dataService.info.description }}</p>
         <div class="info-list row">
             <div class="col-sm-6"><span>Nombre : </span> {{ dataService.info.name }} </div>
@@ -10,6 +9,7 @@
             <div class="col-sm-6"><span>Email : </span> {{ dataService.info.email }} </div>
             <div class="col-sm-6"><span>Telefono : </span> {{ dataService.info.phone }} </div>
             <div class="col-sm-6"><span>Interes : </span> {{ dataService.info.interest }} </div>
+            <div class="col-sm-6"><span>Cargo actual : </span> {{ dataService.info.actualPosition }} <a href="https://enmedio.com" target="_blank" class="company">{{ dataService.info.actualCompany }}</a> </div>
         </div>
     </div>
     <div class="block-content">
@@ -52,7 +52,8 @@
                         <div *ngFor="let edu of dataService.educacion">
                             <div class="exp">
                                 <div class="hgroup">
-                                    <h4>{{ edu.nombre }} | <a href="{{ edu.url }}" target="_blank"><span>Ver Certificado</span></a></h4>
+                                    <h4>{{ edu.nombre }}</h4>
+                                    <!-- <a href="{{ edu.url }}" target="_blank"><span>Ver Certificado</span></a> -->
                                     <h5>{{ edu.fecha }}</h5>
                                 </div>
                                 <p>{{ edu.descripcion }}</p>
