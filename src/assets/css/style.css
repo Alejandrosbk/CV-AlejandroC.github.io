@@ -973,6 +973,11 @@ h2.menu-item:after {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     padding: 0 30px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
 }
 
 .menu2 .name-block.reverse,
@@ -991,6 +996,13 @@ h2.menu-item:after {
     -ms-transform: rotate(34deg);
     -webkit-transform: rotate(34deg);
     transform: rotate(34deg);
+    -moz-transform: rotate(34deg);
+    -o-transform: rotate(34deg);
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
 }
 
 .name-block-container h1,

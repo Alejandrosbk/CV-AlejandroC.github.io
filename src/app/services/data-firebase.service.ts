@@ -52,6 +52,9 @@ export class DataFirebaseService {
     this.http.get('https://cv-alejandroc-default-rtdb.firebaseio.com/Educacion.json').subscribe({
       next: (resp: any) => {
         this.educacion = resp;
+        this.educacion.sort((a, b) => {
+          return new Date(b.fecha).getTime() - new Date(a.fecha).getTime();
+        });
         // console.log(resp);
       },
       error: (error) => {
@@ -76,6 +79,9 @@ export class DataFirebaseService {
     this.http.get('https://cv-alejandroc-default-rtdb.firebaseio.com/Experiencia.json').subscribe({
       next: (resp: any) => {
         this.experiencia = resp;
+        this.experiencia.sort((a, b) => {
+          return new Date(b.date).getTime() - new Date(a.date).getTime();
+        });
         // console.log(resp);
       },
       error: (error) => {
