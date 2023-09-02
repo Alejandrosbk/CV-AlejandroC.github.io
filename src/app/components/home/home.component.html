@@ -18,9 +18,10 @@
     <div class="container">
         <div class="name-block">
             <div class="name-block-container">
-                <h1><span>Hola, Soy</span>{{ dataService.info.name }}</h1>
+                <h1><span class="w-5">Hola, soy</span>{{ dataService.info.name }}</h1>
                 <h2>{{ dataService.info.position }}</h2>
-                <a download="CV.pdf" class="btn btn-download" href="assets/pdf/CV.pdf">Descargar CV</a>
+                <a (click)="showAlert()" class="btn btn-download">Descargar CV</a>
+                <!-- <a download="CV.pdf" class="btn btn-download" href="assets/pdf/CV.pdf">Descargar CV</a> -->
                 <ul class="social">
                     <li>
                         <a href="https://www.linkedin.com/in/david-alejandro-cantillo-g-61b3681a0/" target="_blank"><i

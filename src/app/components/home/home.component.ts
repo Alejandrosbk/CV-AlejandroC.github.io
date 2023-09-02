@@ -12,16 +12,16 @@ export class HomeComponent implements OnInit {
   constructor(public dataService: DataFirebaseService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
-    this.toastr.success('Sitio en actualización', '', {
-      positionClass: 'toast-top-center',
+    // this.toastr.success('Bienvenido/a', 'Hola', {
+    //   positionClass: 'toast-bottom-center',
+    //   timeOut: 3000,
+    // });
+  }
+
+  showAlert() {
+    this.toastr.info('Próximamente disponible', '', {
+      positionClass: 'toast-bottom-center',
       timeOut: 3000,
     });
   }
-
-  // showAlert() {
-  //   this.toastr.info('Próximamente Disponible', '', {
-  //     positionClass: 'toast-top-center',
-  //     timeOut: 3000,
-  //   });
-  // }
 }
