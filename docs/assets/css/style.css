@@ -1026,9 +1026,9 @@ h2.menu-item:after {
 
 .name-block-container h1 span {
     font-size: 26px;
-    font-weight: 300;
+    font-weight: 500;
     display: block;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .social {
